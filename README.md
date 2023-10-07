@@ -78,9 +78,6 @@ model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True)
 model = model.eval()
 
 generation_config = GenerationConfig(
-  num_beams=1,
-  top_p=0.75,
-  top_k=30,
   repetition_penalty=1.1,
   max_new_tokens=1024
 )
