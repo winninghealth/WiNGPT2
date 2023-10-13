@@ -4,7 +4,9 @@ WiNGPT是一个基于GPT的医疗垂直领域大模型，旨在将专业的医�
 
 ## 更新日志
 
-[2023/09/26] 开源 WiNGPT2 与7B模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-7B-Base)WiNGPT2-7B-Base 和 [🤗](https://huggingface.co/winninghealth/WiNGPT2-7B-Chat)WiNGPT2-7B-Chat 
+[2023/10/13] 更新一个简单的[Chatbot示例](#部署)，可以进行简单的多轮对话。
+
+[2023/09/26] 开源 WiNGPT2 与7B模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-7B-Base)WiNGPT2-7B-Base 和 [🤗](https://huggingface.co/winninghealth/WiNGPT2-7B-Chat)WiNGPT2-7B-Chat。 
 
 ## 目录
 
@@ -82,10 +84,9 @@ generation_config = GenerationConfig(
 )
 
 text = 'User: WiNGPT, 你好<|endoftext|>\n Assistant: '
-inputs = tokenizer.encode(text, return_tensors="pt").to(device)
+inputs = tokenizer.encode(text, return_tensors="pt").to(model.device)
 outputs = model.generate(inputs, generation_config=generation_config)
-output = tokenizer.decode(outputs[0])
-response = output.replace(inputs, '')
+response = tokenizer.decode(outputs[0])
 
 ## 输出结果：你好！今天我能为你做些什么？<|endoftext|>
 ```
@@ -103,6 +104,14 @@ WiNGPT2-7B-Chat使用了自定义的提示格式：
 
 解码时推荐使用repetition_penalty=1.1 [greedy search]
 
+### 部署
+
+简单的chatbot部署示例：
+
+```
+python demo.py
+```
+注意：需要安装gradio
 
 ### 企业服务
 
