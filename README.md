@@ -70,23 +70,20 @@ WiNGPT（卫宁健康医疗语言大模型，以下简称WiNGPT）的研发和�
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from transformers.generation import GenerationConfig
 
 model_path = "WiNGPT2-7B-Chat"
+device = "cuda"
 
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True).to(device)
 model = model.eval()
 
-generation_config = GenerationConfig(
-  repetition_penalty=1.1,
-  max_new_tokens=1024
-)
 
 text = 'User: WiNGPT, 你好<|endoftext|>\n Assistant: '
-inputs = tokenizer.encode(text, return_tensors="pt").to(model.device)
-outputs = model.generate(inputs, generation_config=generation_config)
+inputs = tokenizer.encode(text, return_tensors="pt").to(device)
+outputs = model.generate(inputs, repetition_penalty=1.1, max_new_tokens=1024)
 response = tokenizer.decode(outputs[0])
+print(response)
 
 ## 输出结果：你好！今天我能为你做些什么？<|endoftext|>
 ```
