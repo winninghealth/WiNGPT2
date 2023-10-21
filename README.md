@@ -79,7 +79,7 @@ model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True)
 model = model.eval()
 
 
-text = 'User: WiNGPT, 你好<|endoftext|>\n Assistant: '
+text = 'User: WiNGPT, 你好<|endoftext|>\n Assistant:'
 inputs = tokenizer.encode(text, return_tensors="pt").to(device)
 outputs = model.generate(inputs, repetition_penalty=1.1, max_new_tokens=1024)
 response = tokenizer.decode(outputs[0])
@@ -94,9 +94,9 @@ WiNGPT2-7B-Chat使用了自定义的提示格式：
 
 用户角色：User/Assistant
 
-提示模板：User:[此处有空格]WiNGPT, 你好<|endoftext|>\n[此处有空格]Assistant:[此处有空格]；**多轮对话**按此模板进行拼接，例如：
+提示模板：User:[此处有空格]WiNGPT, 你好<|endoftext|>\n[此处有空格]Assistant:；**多轮对话**按此模板进行拼接，例如：
 ```
-"User: WiNGPT, 你好<|endoftext|>\n Assistant: 你好！今天我能为你做些什么？<|endoftext|>\n User: 你是谁？<|endoftext|>\n Assistant: "
+"User: WiNGPT, 你好<|endoftext|>\n Assistant:你好！今天我能为你做些什么？<|endoftext|>\n User: 你是谁？<|endoftext|>\n Assistant:"
 ```
 
 解码时推荐使用repetition_penalty=1.1 [greedy search]
