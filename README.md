@@ -4,6 +4,8 @@ WiNGPT是一个基于GPT的医疗垂直领域大模型，旨在将专业的医�
 
 ## 更新日志
 
+[2023/12/12] 开源 WiNGPT2 与14B模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Base)WiNGPT2-14B-Base 和 [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat)WiNGPT2-14B-Chat。 
+
 [2023/11/02] [13B模型平台测试](https://wingpt.winning.com.cn/) 和 [欢迎加入微信讨论群](https://github.com/winninghealth/WiNGPT2/blob/main/assets/WiNGPT_GROUP.JPG)
 
 [2023/10/13] 更新一个简单的[Chatbot示例](#部署)，可以进行简单的多轮对话。
@@ -67,6 +69,10 @@ WiNGPT（卫宁健康医疗语言大模型，以下简称WiNGPT）的研发和�
 [WiNGPT2-7B-Base](https://huggingface.co/winninghealth/WiNGPT2-7B-Base)
 
 [WiNGPT2-7B-Chat](https://huggingface.co/winninghealth/WiNGPT2-7B-Chat)
+
+[WiNGPT2-14B-Base](https://huggingface.co/winninghealth/WiNGPT2-14B-Base)
+
+[WiNGPT2-14B-Chat](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat)
 
 ### 推理
 
