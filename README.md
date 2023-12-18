@@ -211,7 +211,7 @@ python demo.py
 
 <details><summary>MCKQuiz（客观题）：17个科目分类13060选择题；输入问题和选项，让模型输出答案。根据标准答案判断对错，统计准确率。</summary><img src="./assets/客观题.png"/></details>
 
-| 模型名称           | 客观题分数 |
+| 模型名称           | MCKQuiz |
 | ------------------ | ---------- |
 | HuatuoGPT-7B       | 40.0       |
 | MedicalGPT         | 43.1       |
@@ -222,6 +222,7 @@ python demo.py
 | Qwen-14B-Chat      | 66.8       |
 | WiNGPT-14B-Chat    | **68.2**       |
 
+** 后续将继续公开主观题的测评结果，敬请期待。
 
 ## 应用
 
