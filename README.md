@@ -200,6 +200,20 @@ python demo.py
 | [Qwen-7B](https://cevalbenchmark.com/static/model.html?method=Qwen-7B)                       | **59.6** | 41         | 61         | 57.1         | 56           | 63.9         |
 | [WiNGPT2-7B-Base](https://huggingface.co/winninghealth/WiNGPT2-7B-Base)                      | 57.4     | **42.7**   | **61.4**   | **70.9**     | **69.5**     | **76.7**     |
 
+- 卫宁健康人工智能实验室自制客观题评估（Zero-shot）
+- 
+<details><summary>客观题：17个科目分类13060选择题；输入问题和选项，让模型输出答案。根据标准答案判断对错，统计准确率。</summary><img src="./assets/%E5%AE%A2%E8%A7%82%E9%A2%98.png"/></details>
+
+| 模型名称           | 客观题分数 |
+| ------------------ | ---------- |
+| HuatuoGPT-7B       | 40.0       |
+| MedicalGPT         | 43.1       |
+| Baichuan2-7B-Chat  | 48.6       |
+| qwen-7B-Chat       | 55         |
+| WiNGPT-7B-Chat     | 59.2       |
+| Baichuan2-13B-Chat | 56.4       |
+| qwen-14B-Chat      | 66.8       |
+| WiNGPT-14B-Chat    | 68.2       |
 
 ** 因当前发现MedQA-MCMLE存在数据泄露问题，我们去除了该评测表格。
 
