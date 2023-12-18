@@ -4,7 +4,9 @@ WiNGPT是一个基于GPT的医疗垂直领域大模型，旨在将专业的医�
 
 ## 更新日志
 
-[2023/12/12] 开源 WiNGPT2 与14B模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Base)WiNGPT2-14B-Base 和 [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat)WiNGPT2-14B-Chat。 
+[2023/12/18] 发布卫宁健康医疗模型测评方案 WiNEval-MCKQuiz的评测结果。
+
+[2023/12/12] 开源 WiNGPT2 14B模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Base)WiNGPT2-14B-Base 和 [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat)WiNGPT2-14B-Chat。 
 
 [2023/11/02] [13B模型平台测试](https://wingpt.winning.com.cn/) 和 [欢迎加入微信讨论群](https://github.com/winninghealth/WiNGPT2/blob/main/assets/WiNGPT_GROUP.JPG)
 
@@ -201,10 +203,13 @@ python demo.py
 | [WiNGPT2-7B-Base](https://huggingface.co/winninghealth/WiNGPT2-7B-Base)                      | 57.4     | **42.7**   | **61.4**   | **70.9**     | **69.5**     | **76.7**     |
 
 
+** 因当前发现MedQA-MCMLE存在数据泄露问题，我们去除了该评测表格。
 
-- 卫宁健康人工智能实验室自制客观题评估（Zero-shot）
-  
-<details><summary>客观题：17个科目分类13060选择题；输入问题和选项，让模型输出答案。根据标准答案判断对错，统计准确率。</summary><img src="./assets/客观题.png"/></details>
+** 目前公开测评存在一定局限性，结果仅供参考。
+
+- 卫宁健康医疗模型测评方案 WiNEval（Zero-shot）
+
+<details><summary>MCKQuiz（客观题）：17个科目分类13060选择题；输入问题和选项，让模型输出答案。根据标准答案判断对错，统计准确率。</summary><img src="./assets/客观题.png"/></details>
 
 | 模型名称           | 客观题分数 |
 | ------------------ | ---------- |
@@ -216,12 +221,6 @@ python demo.py
 | Baichuan2-13B-Chat | 56.4       |
 | Qwen-14B-Chat      | 66.8       |
 | WiNGPT-14B-Chat    | **68.2**       |
-
-** 因当前发现MedQA-MCMLE存在数据泄露问题，我们去除了该评测表格。
-
-** 目前公开测评存在一定局限性，结果仅供参考。
-
-** 更多专业测评敬请期待。
 
 
 ## 应用
