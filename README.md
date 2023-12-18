@@ -212,10 +212,10 @@ python demo.py
 | MedicalGPT         | 43.1       |
 | Baichuan2-7B-Chat  | 48.6       |
 | Qwen-7B-Chat       | 55         |
-| WiNGPT-7B-Chat     | 59.2       |
+| WiNGPT-7B-Chat     | **59.2**       |
 | Baichuan2-13B-Chat | 56.4       |
 | Qwen-14B-Chat      | 66.8       |
-| WiNGPT-14B-Chat    | 68.2       |
+| WiNGPT-14B-Chat    | **68.2**       |
 
 ** 因当前发现MedQA-MCMLE存在数据泄露问题，我们去除了该评测表格。
 
