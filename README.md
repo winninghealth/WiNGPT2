@@ -201,8 +201,8 @@ python demo.py
 | [WiNGPT2-7B-Base](https://huggingface.co/winninghealth/WiNGPT2-7B-Base)                      | 57.4     | **42.7**   | **61.4**   | **70.9**     | **69.5**     | **76.7**     |
 
 - 卫宁健康人工智能实验室自制客观题评估（Zero-shot）
-- 
-<details><summary>客观题：17个科目分类13060选择题；输入问题和选项，让模型输出答案。根据标准答案判断对错，统计准确率。</summary><img src="./assets/%E5%AE%A2%E8%A7%82%E9%A2%98.png"/></details>
+  
+<details><summary>客观题：17个科目分类13060选择题；输入问题和选项，让模型输出答案。根据标准答案判断对错，统计准确率。</summary><img src="./assets/客观题.png"/></details>
 
 | 模型名称           | 客观题分数 |
 | ------------------ | ---------- |
