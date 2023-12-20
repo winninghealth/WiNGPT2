@@ -4,6 +4,8 @@ WiNGPT是一个医疗垂直领域大模型，旨在将专业的医学知识、�
 
 ## 更新日志
 
+[2023/12/20] 新增用户微信群二维码，有效期到12月27日，扫码进群。
+
 [2023/12/18] 发布卫宁健康医疗模型测评方案 WiNEval-MCKQuiz的评测结果。
 
 [2023/12/12] 开源 WiNGPT2 14B模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Base)WiNGPT2-14B-Base 和 [🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat)WiNGPT2-14B-Chat。 
@@ -122,7 +124,7 @@ python demo.py
 
 ### 企业服务
 
-联系我们获取邀测密钥
+[通过WiNGPT测试平台申请密钥或与我们取得联系](https://wingpt.winning.com.cn/)
 
 ## 训练数据
 
@@ -270,3 +272,5 @@ python demo.py
 网站：https://www.winning.com.cn
 
 邮箱：wair@winning.com.cn
+
+<img src="./assets/wechatgroup.jpg" width=300px />
