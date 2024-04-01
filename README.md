@@ -4,6 +4,8 @@ WiNGPT是一个医疗垂直领域大模型，旨在将专业的医学知识、�
 
 ## 更新日志
 
+[2024/04/01] 更新 WiNEval 测评结果
+
 [2024/03/05] 开源7B/14B-Chat-4bit模型权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-7B-Chat-AWQ)WiNGPT2-7B-Chat-4bit和[🤗](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat-AWQ)WiNGPT2-14B-Chat-4bit。
 
 [2023/12/20] 新增用户微信群二维码，有效期到12月27日，扫码进群。
