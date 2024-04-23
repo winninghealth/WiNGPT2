@@ -4,7 +4,7 @@ WiNGPT是一个医疗垂直领域大模型，旨在将专业的医学知识、�
 
 ## 更新日志
 
-[2024/04/23] 开源 基于Llama-3-8b-base模型医疗领域增量预训练权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-Llama-3-8B-Base)WiNGPT2-Llama3-8B-Base
+[2024/04/23] 开源 基于Llama3-8b-base模型医疗领域增量预训练权重: [🤗](https://huggingface.co/winninghealth/WiNGPT2-Llama-3-8B-Base)WiNGPT2-Llama3-8B-Base
 
 [2024/04/01] 更新 WiNEval 测评结果
 
@@ -90,6 +90,8 @@ WiNGPT（卫宁健康医疗语言大模型，以下简称WiNGPT）的研发和�
 [WiNGPT2-7B-Chat-4bit](https://huggingface.co/winninghealth/WiNGPT2-7B-Chat-AWQ)
 
 [WiNGPT2-14B-Chat-4bit](https://huggingface.co/winninghealth/WiNGPT2-14B-Chat-AWQ)
+
+[WiNGPT2-Llama3-8B-Base](https://huggingface.co/winninghealth/WiNGPT2-Llama-3-8B-Base)
 
 ### 推理
 
